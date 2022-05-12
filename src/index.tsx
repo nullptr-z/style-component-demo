@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactClient from 'react-dom/client';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createGlobalStyle, ThemeProvider } from "styled-components"
 import "./index.css"
@@ -29,7 +28,6 @@ ReactClient.createRoot(document.getElementById('root')!).render(
       theme={{
         main: "var(--color-header-bg,mediumseagreen)"
       }}>
-      <App style={{ border: "3px solid var(--color-header-bg2)" }} />
       <GlobalStyle />
     </ThemeProvider>
 
